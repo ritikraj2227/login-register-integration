@@ -1,0 +1,242 @@
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	height: 50px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10%;
+}
+
+nav button {
+	background-color: rgb(13, 110, 253);
+	border-radius: 6px;
+	border: 1px solid rgb(13, 110, 253);
+	cursor: pointer;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px 12px;
+	margin: 8px 0px;
+	text-align: center;
+	line-height: 24px;
+}
+
+nav button a{
+	color: white;
+	text-decoration: none;
+}
+nav button:hover {
+	background-color: #0b5ed7;
+	border-color: #0a58ca;
+}
+
+.tablecontainer {
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 80%;
+}
+
+td,
+th {
+	border: 1px solid rgba(0, 0, 0, 0.176);
+	padding: 8px;
+	font-size: 18px;
+	line-height: 24px;
+}
+thead tr{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.176);
+}
+.container {
+	/* max-width: 1140px; */
+	padding: 0px 12px;
+	margin: 0px 58px;
+	text-align: start;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.errmsg {
+	color: red;
+}
+
+.flexcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px;
+}
+
+.card {
+	border: 1px solid rgba(0, 0, 0, 0.176);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	color: rgb(33, 37, 41);
+	width: 485px;
+	/* height: 584px; */
+	position: relative;
+}
+
+.card-header {
+	background-color: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.176);
+	display: block;
+	padding: 8px 16px;
+	/* width: 468px; */
+}
+
+.card-header h1 {
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 48px;
+}
+.card-body {
+	color: rgb(33, 37, 41);
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0px 16px;
+	padding: 16px 16px;
+}
+
+.card-body .row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0px -12px;
+	padding-top: 8px;
+	text-align: start;
+	justify-content: space-between;
+}
+
+.flname input {
+	width: 210px;
+}
+
+.dob {
+	display: flex;
+	align-items: center;
+}
+.dob input {
+	width: 300px;
+}
+.row .col {
+	display: block;
+	flex-basis: 0%;
+	width: 220px;
+	padding: 0;
+}
+
+.col label {
+	margin-bottom: 8px;
+}
+
+input {
+	border: 1px solid rgb(206, 212, 218);
+	background-color: white;
+	border-radius: 6px;
+	color: rgb(33, 37, 41);
+	font-size: 16px;
+	font-stretch: 100%;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 6px 12px;
+	width: 100%;
+}
+
+.gender {
+	display: flex;
+}
+
+.radio {
+	display: flex;
+	margin: 0px 16px;
+}
+
+.radio label {
+	margin-left: 10px;
+}
+
+.card-footer {
+	background-color: rgba(0, 0, 0, 0.03);
+	border-top: 1px solid rgba(0, 0, 0, 0.176);
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 8px 16px;
+	text-align: center;
+	/* width: 468px; */
+}
+
+.card-footer button {
+	background-color: rgb(13, 110, 253);
+	border-radius: 6px;
+	border: 1px solid rgb(13, 110, 253);
+	cursor: pointer;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px 12px;
+	margin: 8px 0px;
+	text-align: center;
+	line-height: 24px;
+}
+
+.card-footer button:hover {
+	background-color: #0b5ed7;
+	border-color: #0a58ca;
+}
+
+.card-footer p {
+	color: rgb(33, 37, 41);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 8px;
+}
+
+.card-footer p a {
+	color: rgb(13, 110, 253);
+}
+
+@media screen and (max-width: 760px) {
+	table{
+		width: 90%;
+	}
+	.card-body .row {
+		flex-direction: column;
+	}
+	.row .col {
+		width: 100%;
+	}
+	.dob {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.flname input {
+		width: 100%;
+	}
+
+}
